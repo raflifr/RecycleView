@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="104dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="52dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="tvJudul"
+        app:layout_constraintStart_toEndOf="@+id/photo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWeapon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="tvWeapon"
+        app:layout_constraintStart_toEndOf="@+id/photo"
+        app:layout_constraintTop_toBottomOf="@+id/tvJudul" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:text="tvDescription"
+        app:layout_constrainedWidth="true"
+        android:ellipsize="end"
+        android:maxLines="4"
+        app:layout_constraintStart_toEndOf="@+id/photo"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeapon" />
+    <!--    <ScrollView-->
+    <!--        android:layout_width="250dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginLeft="8dp"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/photo"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tvGenre">-->
+
+
+
+    <!--    </ScrollView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
